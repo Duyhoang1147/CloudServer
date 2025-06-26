@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CloudServer.Data.Dto.AuthDto
+namespace CloudServer.Data.Dto.UserDto
 {
     public class UserDto
     {
@@ -13,8 +13,6 @@ namespace CloudServer.Data.Dto.AuthDto
         public string Email { get; set; }
         public string PhoneNumber { get; set; }
         public string Address { get; set; }
-        public ICollection<string> Roles { get; set; } = new List<string>();
-        public ICollection<string> Permissions { get; set; } = new List<string>();
         public UserDto()
         {
             Id = string.Empty;
