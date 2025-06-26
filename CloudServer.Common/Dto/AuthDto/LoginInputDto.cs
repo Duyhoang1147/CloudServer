@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace CloudServer.Data.Dto.AuthDto
+namespace CloudServer.Common.Dto.AuthDto
 {
     public class LoginInputDto
     {
