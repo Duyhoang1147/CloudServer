@@ -1,0 +1,17 @@
+D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.IdentityService\bin\Debug\net8.0\CloudServer.IdentityService.deps.json
+D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.IdentityService\bin\Debug\net8.0\CloudServer.IdentityService.dll
+D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.IdentityService\bin\Debug\net8.0\CloudServer.IdentityService.pdb
+D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.IdentityService\bin\Debug\net8.0\CloudServer.Data.dll
+D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.IdentityService\bin\Debug\net8.0\CloudServer.Data.pdb
+D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.IdentityService\obj\Debug\net8.0\CloudServer.IdentityService.csproj.AssemblyReference.cache
+D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.IdentityService\obj\Debug\net8.0\CloudServer.IdentityService.GeneratedMSBuildEditorConfig.editorconfig
+D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.IdentityService\obj\Debug\net8.0\CloudServer.IdentityService.AssemblyInfoInputs.cache
+D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.IdentityService\obj\Debug\net8.0\CloudServer.IdentityService.AssemblyInfo.cs
+D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.IdentityService\obj\Debug\net8.0\CloudServer.IdentityService.csproj.CoreCompileInputs.cache
+D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.IdentityService\obj\Debug\net8.0\CloudSer.85774C9A.Up2Date
+D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.IdentityService\obj\Debug\net8.0\CloudServer.IdentityService.dll
+D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.IdentityService\obj\Debug\net8.0\refint\CloudServer.IdentityService.dll
+D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.IdentityService\obj\Debug\net8.0\CloudServer.IdentityService.pdb
+D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.IdentityService\obj\Debug\net8.0\ref\CloudServer.IdentityService.dll
+D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.IdentityService\bin\Debug\net8.0\CloudServer.IdentityService.runtimeconfig.json
+D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.IdentityService\obj\Debug\net8.0\CloudServer.IdentityService.genruntimeconfig.cache
