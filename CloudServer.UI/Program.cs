@@ -1,7 +1,6 @@
-using CloudServer.Data.Connection;
-using CloudServer.Data.Entity;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
+using CloudServer.Data.Connection;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,9 +10,6 @@ builder.Services.AddRazorPages();
 
 builder.Services.AddDbContext<IdentityAppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("IdentityDbConnection")));
-
-builder.Services.AddDefaultIdentity<ApplicationUser>()
-    .AddEntityFrameworkStores<IdentityAppDbContext>();
 
 var app = builder.Build();
 
