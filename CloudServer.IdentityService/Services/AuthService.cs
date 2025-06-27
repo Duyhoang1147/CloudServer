@@ -1,11 +1,9 @@
-﻿using CloudServer.Data.Dto.AuthDto;
-using CloudServer.Data.Dto.UserDto;
+﻿using CloudServer.Common.Dto.AuthDto;
+using CloudServer.Common.Dto.UserDto;
 using CloudServer.Data.Entity;
 using CloudServer.IdentityService.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace CloudServer.IdentityService.Services
 {

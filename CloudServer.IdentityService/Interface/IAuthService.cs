@@ -1,5 +1,5 @@
-﻿using CloudServer.Data.Dto.AuthDto;
-using CloudServer.Data.Dto.UserDto;
+﻿using CloudServer.Common.Dto.AuthDto;
+using CloudServer.Common.Dto.UserDto;
 
 namespace CloudServer.IdentityService.Interface
 {
