@@ -155,3 +155,13 @@ D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.UI\obj\Debug\net8.0\refint\
 D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.UI\obj\Debug\net8.0\CloudServer.UI.pdb
 D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.UI\obj\Debug\net8.0\CloudServer.UI.genruntimeconfig.cache
 D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.UI\obj\Debug\net8.0\ref\CloudServer.UI.dll
+D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.UI\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.UI\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.UI\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
+D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.UI\bin\Debug\net8.0\Microsoft.CodeAnalysis.Razor.dll
+D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.UI\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.UI\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.UI\bin\Debug\net8.0\Microsoft.Extensions.Localization.dll
+D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.UI\bin\Debug\net8.0\Microsoft.Extensions.Localization.Abstractions.dll
+D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.UI\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.UI\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CloudServer.IdentityService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2d48e0939f0b6eb2e6a152594b05e5f64a0c879d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0bf7908955668e99f451007d38e9e81f9040566")]
 [assembly: System.Reflection.AssemblyProductAttribute("CloudServer.IdentityService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CloudServer.IdentityService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
