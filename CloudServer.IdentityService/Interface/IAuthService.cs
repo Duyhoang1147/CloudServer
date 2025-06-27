@@ -8,6 +8,6 @@ namespace CloudServer.IdentityService.Interface
         public Task<LoginInputDto> LoginAsync(LoginInputDto model);
         public Task<RegisterDto> RegisterAsync(RegisterDto model);
         public Task LogoutAsync();
-        public Task<UserDto> GetUserInfoAsync();
+        public Task<UserDto> GetProfileAsync();
     }
 }
