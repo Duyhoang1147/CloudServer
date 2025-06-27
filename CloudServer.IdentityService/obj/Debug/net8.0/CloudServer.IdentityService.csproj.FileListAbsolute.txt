@@ -15,3 +15,6 @@ D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.IdentityService\obj\Debug\n
 D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.IdentityService\obj\Debug\net8.0\ref\CloudServer.IdentityService.dll
 D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.IdentityService\bin\Debug\net8.0\CloudServer.IdentityService.runtimeconfig.json
 D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.IdentityService\obj\Debug\net8.0\CloudServer.IdentityService.genruntimeconfig.cache
+D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.IdentityService\obj\Debug\net8.0\CloudServer.IdentityService.sourcelink.json
+D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.IdentityService\bin\Debug\net8.0\CloudServer.Common.dll
+D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.IdentityService\bin\Debug\net8.0\CloudServer.Common.pdb

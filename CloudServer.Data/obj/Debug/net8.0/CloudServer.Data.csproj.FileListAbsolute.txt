@@ -12,3 +12,4 @@ D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.Data\obj\Debug\net8.0\refin
 D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.Data\obj\Debug\net8.0\CloudServer.Data.pdb
 D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.Data\obj\Debug\net8.0\CloudServer.Data.genruntimeconfig.cache
 D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.Data\obj\Debug\net8.0\ref\CloudServer.Data.dll
+D:\TaiLieu\Project\ASPdotNET\CloudServer\CloudServer.Data\obj\Debug\net8.0\CloudServer.Data.sourcelink.json
