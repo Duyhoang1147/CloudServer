@@ -65,7 +65,7 @@ namespace CloudServer.IdentityService.Services
             await _signInManager.SignOutAsync();
         }
 
-        public async Task<UserDto> GetUserInfoAsync()
+        public async Task<UserDto> GetProfileAsync()
         {
             var userPrincipal = _httpContext.HttpContext?.User;
             if(userPrincipal == null)
