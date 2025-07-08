@@ -14,7 +14,7 @@ namespace CloudServer.UI.Pages
 
         public void OnGet()
         {
-
+            // Add any initialization logic here if needed
         }
     }
 }

@@ -1,0 +1,33 @@
+﻿/* Tùy chỉnh độ rộng container và màu sắc chủ đạo */
+.my-container {
+    max-width: 60%;
+}
+
+.divider {
+    height: 2px;
+    width: 60%;
+    background-color: #4CAF50;
+    border: none;
+    margin: 0 auto 1.5rem;
+}
+
+.btn-custom {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+}
+
+    .btn-custom:hover {
+        background-color: #45A049;
+    }
+/* Sidebar menu */
+.nav-pills .nav-link {
+    border-radius: 0;
+    font-weight: bold;
+    color: #333;
+}
+
+    .nav-pills .nav-link.active {
+        background-color: #4CAF50;
+        color: #fff;
+    }
