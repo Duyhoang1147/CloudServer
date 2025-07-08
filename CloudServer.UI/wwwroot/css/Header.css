@@ -1,0 +1,81 @@
+﻿/* Tùy chỉnh độ rộng và màu sắc chủ đạo */
+.body {
+    background-color: #f4f4f4;
+}
+
+.navbar-custom {
+    background-color: #4CAF50;
+}
+
+.my-container {
+    max-width: 60%;
+}
+
+.divider {
+    height: 2px;
+    width: 60%;
+    background-color: #4CAF50;
+    border: none;
+    margin: 0 auto 1.5rem;
+}
+
+.btn-custom {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+}
+
+    .btn-custom:hover {
+        background-color: #45A049;
+    }
+/* Sidebar menu */
+.nav-pills .nav-link {
+    border-radius: 0;
+    font-weight: bold;
+    color: #333;
+}
+
+    .nav-pills .nav-link.active {
+        background-color: #4CAF50;
+        color: #fff;
+    }
+/* Header adjustments */
+body {
+    padding-top: 56px; /* chiều cao navbar */
+}
+
+.avatar-small {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border: 2px solid #4CAF50;
+}
+
+.avatar-large {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 2px solid #4CAF50;
+}
+
+.content-container {
+    flex: 1 1 auto;
+    display: flex;
+    height: calc(100vh - 56px); /* trừ chiều cao header (56px) */
+}
+
+aside.sidebar {
+    width: 20%;
+    max-width: 250px;
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+}
+
+main {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    background-color: #fff;
+}

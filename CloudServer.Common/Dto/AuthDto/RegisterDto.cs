@@ -17,13 +17,13 @@ namespace CloudServer.Common.Dto.AuthDto
 
         [Required(ErrorMessage = "Confirm Password is required")]
         [Compare("Password", ErrorMessage = "Passwords do not match")]
-        public string ComfirmPassword { get; set; }
+        public string ConfirmPassword { get; set; }
         public RegisterDto()
         {
             Username = string.Empty;
             Email = string.Empty;
             Password = string.Empty;
-            ComfirmPassword = string.Empty;
+            ConfirmPassword = string.Empty;
         }
     }
 }
