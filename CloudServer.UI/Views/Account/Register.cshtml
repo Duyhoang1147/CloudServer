@@ -1,0 +1,59 @@
+﻿@{
+    ViewBag.Title = "Register";
+    Layout = "_LayoutAccount";
+}
+@model CloudServer.Common.Dto.AuthDto.RegisterDto
+
+<div class="form-container">
+    <h2>Đăng Ký</h2>
+    <form asp-controller="Account" asp-action="Register" method="post">
+        @Html.AntiForgeryToken()
+        <div class="form-group">
+            <label asp-for="Username">Họ và tên</label>
+            <input asp-for="Username" class="form-control" placeholder="Nhập họ và tên của bạn" />
+            <span asp-validation-for="Username" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Email">Email</label>
+            <input asp-for="Email" class="form-control" placeholder="Nhập email của bạn" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Password">Mật khẩu</label>
+            <input asp-for="Password" class="form-control" placeholder="Nhập mật khẩu" />
+            <span class="toggle-password" data-target="Password">Hiện</span>
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="ConfirmPassword">Xác nhận mật khẩu</label>
+            <input asp-for="ConfirmPassword" class="form-control" placeholder="Nhập lại mật khẩu" />
+            <span class="toggle-password" data-target="ConfirmPassword">Hiện</span>
+            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+        </div>
+        <button type="submit">Đăng ký</button>
+    </form>
+    <div class="form-footer">
+        Đã có tài khoản? <a asp-controller="Account" asp-action="Login">Đăng nhập ngay</a>
+    </div>
+</div>
+
+<link rel="stylesheet" href="~/css/login.css" />
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        document.querySelectorAll('.toggle-password').forEach(function(toggle) {
+            toggle.addEventListener('click', function() {
+                const targetId = this.getAttribute('data-target');
+                const pwdInput = document.getElementById(targetId);
+                if (pwdInput.type === 'password') {
+                    pwdInput.type = 'text';
+                    this.textContent = 'Ẩn';
+                } else {
+                    pwdInput.type = 'password';
+                    this.textContent = 'Hiện';
+                }
+            });
+        });
+    </script>
+}

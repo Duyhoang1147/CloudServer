@@ -9,7 +9,7 @@ using System.Security.Claims;
 
 namespace CloudServer.IdentityService.Services
 {
-    internal class UserService : IUserService
+    public class UserService : IUserService
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;

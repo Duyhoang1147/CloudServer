@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cloud Layout</title>
+    <link rel="stylesheet" href="./css/LayoutHome.css">
+</head>
+<body>
+    <header class="top-bar">
+        <div class="brand">
+            <span>Cloud</span>
+        </div>
+        <div class="menu-container">
+            <button class="menu-button" aria-label="Mở menu" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+            <nav class="dropdown" id="dropdownMenu">
+                <a href="#">Hồ sơ</a>
+                <form asp-controller="Account" asp-action="Logout" method="post" style="display:inline">
+                    @Html.AntiForgeryToken()
+                    <button type="submit" class="dropdown-link">Đăng xuất</button>
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+
+    @RenderSection("Scripts", false)
+
+    <script>
+        function toggleMenu() {
+          const menu = document.getElementById('dropdownMenu');
+          if (menu.classList.contains('show')) {
+            menu.classList.remove('show');
+            menu.classList.add('hide');
+            setTimeout(() => menu.classList.remove('hide'), 200);
+          } else {
+            menu.classList.add('show');
+          }
+        }
+
+        document.addEventListener('click', e => {
+          const menu = document.getElementById('dropdownMenu');
+          const btn  = document.querySelector('.menu-button');
+          if (!menu.contains(e.target) && !btn.contains(e.target)) {
+            if (menu.classList.contains('show')) toggleMenu();
+          }
+        });
+    </script>
+
+</body>
+</html>

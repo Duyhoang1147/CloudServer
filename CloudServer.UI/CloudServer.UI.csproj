@@ -14,9 +14,11 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CloudServer.Common\CloudServer.Common.csproj" />
     <ProjectReference Include="..\CloudServer.Data\CloudServer.Data.csproj" />
     <ProjectReference Include="..\CloudServer.IdentityService\CloudServer.IdentityService.csproj" />
   </ItemGroup>

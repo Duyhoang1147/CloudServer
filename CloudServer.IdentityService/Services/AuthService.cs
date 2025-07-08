@@ -1,13 +1,14 @@
 ﻿using CloudServer.Common.Dto.AuthDto;
 using CloudServer.Common.Dto.UserDto;
 using CloudServer.Data.Entity;
+using CloudServer.Data.Models;
 using CloudServer.IdentityService.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 
 namespace CloudServer.IdentityService.Services
 {
-    internal class AuthService : IAuthService
+    public class AuthService : IAuthService
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
@@ -25,7 +26,7 @@ namespace CloudServer.IdentityService.Services
         public async Task<LoginInputDto> LoginAsync(LoginInputDto model)
         {
 
-            var user = await _userManager.FindByNameAsync(model.Username);
+            var user = await _userManager.FindByEmailAsync(model.Email);
             if (user == null)
             {
                 throw new Exception("User not found");
@@ -41,7 +42,7 @@ namespace CloudServer.IdentityService.Services
                 throw new Exception("Invalid login attempt");
             }
         }
-        public Task<RegisterDto> RegisterAsync(RegisterDto model)
+        public async Task<RegisterDto> RegisterAsync(RegisterDto model)
         {
             var user = new ApplicationUser
             {
@@ -49,10 +50,16 @@ namespace CloudServer.IdentityService.Services
                 Email = model.Email
             };
 
-            var result = _userManager.CreateAsync(user, model.Password).Result;
+            var result = await _userManager.CreateAsync(user, model.Password);
             if (result.Succeeded)
             {
-                return Task.FromResult(model); // Return the model if registration is successful
+                var loginResult = await _signInManager.PasswordSignInAsync(user, model.Password, false, false);
+                if(!loginResult.Succeeded)
+                {
+                    throw new Exception("Registration succeeded but login failed");
+                }
+                Console.WriteLine("User registered successfully");
+                return model;
             }
             else
             {
@@ -85,9 +92,8 @@ namespace CloudServer.IdentityService.Services
                 Username = user.UserName ?? string.Empty,
                 Email = user.Email ?? string.Empty,
                 PhoneNumber = user.PhoneNumber ?? string.Empty,
-                Address = userPrincipal.FindFirst(c => c.Type == "adress")?.Value ?? string.Empty,
+                Address = userPrincipal.FindFirst(c => c.Type == DefaultClaims.Address)?.Value ?? string.Empty,
             };
-
             return UserDto;
         }
     }
